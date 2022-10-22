@@ -1,0 +1,245 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+
+/* utility */
+.tombol{
+    font-family: Quicksand;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding-inline: 32px;
+    background-color: #5151AC;
+    border-color: #5151AC;
+    margin-top: 4px;
+}
+
+.tombol:hover{
+    background-color: #2F2F68;
+    border-color: #2F2F68;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align:center ;
+    position: relative
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0
+}
+
+
+.jumbotron .display-4 {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-top: 160px;
+    margin-bottom: 32px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 600;
+}
+
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    margin-top: -120px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4{
+    font-size: 20px;
+    color: #2F2F68;
+    font-weight: bold;
+    margin-top:20px ;
+    font-family: Poppins;
+}
+
+.info-panel p{
+    font-size: 16px;
+    color: #2F2F68;
+    font-family: quicksand;
+    margin-top: -5px;
+}
+
+/* orderim */
+.orderim {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.orderim h3{
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 300;
+    color: #2F2F68;
+    text-align: center;
+}
+
+.orderim h3 span {
+    font-weight: 600;
+}
+
+.orderim p {
+    font-size:20px ;
+    font-family: Quicksand;
+    color: #2F2F68;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* testimonial */
+.testimonial {
+    margin-top: 120px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-family: quicksand;
+    font-weight:300 ;
+    font-style: italic;
+    color: #2F2F68;
+    font-size: 32px;
+}
+
+.testimonial figure img{
+    width: 60px; 
+    margin: 20px 10px 5px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama{
+    width: 100px;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+.testimonial figure h5{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-style: normal;
+    color: #2F2F68;
+}
+
+.testimonial figure p{
+    font-size: 16px;
+    font-family: quicksand;
+    color: #7E57C2;
+    margin-top: -2px;
+}
+
+.testimonial figcaption{
+    text-align: center;
+}
+
+.footer {
+    margin-top: 1200px;
+    background-color: #6868AC;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    font-family: quicksand;
+}
+
+
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6)
+    }
+    .nav-link {
+        font-family: Quicksand;
+        margin-right: 32px;
+        font-size: 20px;
+    }
+
+
+    .nav-link:hover::after  {
+        content:'' ;
+        display: block;
+        border-bottom: 3px solid #5151AC;
+        width: 50%;
+        margin:auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+        
+    .jumbotron{
+        margin-top: -90px;
+        height: 682px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 48px;
+    }
+
+    .orderim{
+        text-align: left;
+    }
+
+    .orderim h3{
+        text-align: left;
+    }
+
+    .orderim p{
+        text-align: left;
+    }
+
+    .testimonial h5{
+        text-align: center;
+        font-family: quicksand;
+        font-weight:300 ;
+        font-style: italic;
+        color: #2F2F68;
+        font-size: 32px;
+    
+    }
+}
